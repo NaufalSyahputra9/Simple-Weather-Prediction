@@ -1,0 +1,20 @@
+services:
+  # Service Backend
+  weather-backend:
+    build:
+      context: ./backend # Artinya: Build pakai file yang ada di folder ini (root)
+      dockerfile: Dockerfile
+    container_name: weather-be
+    ports:
+      - "8080:8080"
+
+  # Service Frontend
+  weather-frontend:
+    build:
+      context: ./frontend # Artinya: Masuk ke folder frontend untuk cari Dockerfile
+      dockerfile: Dockerfile
+    container_name: weather-fe
+    ports:
+      - "3000:80"
+    depends_on:
+      - weather-backend

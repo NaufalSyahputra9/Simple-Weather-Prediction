@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - Budi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <h1>Weather Prediction 🌤️</h1>
+    <div style="display: flex; gap: 10px">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Masukkan nama kota (ex: Jakarta)"
+      />
+      <button id="searchBtn">Cari</button>
+    </div>
+
+    <div
+      id="result"
+      style="
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #222;
+        display: none;
+      "
+    >
+      <h2 id="cityName"></h2>
+      <p>Suhu: <span id="temp"></span>°C</p>
+      <p>Kondisi: <span id="desc"></span></p>
+      <p>Kelembapan: <span id="humi"></span>%</p>
+    </div>
+
+    <script src="../src/script.js"></script>
+  </body>
+</html>

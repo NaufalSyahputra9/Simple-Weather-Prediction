@@ -1,0 +1,16 @@
+{
+  "name": "weather-frontend",
+  "version": "1.0.0",
+  "description": "Frontend sederhana untuk Weather App Budi",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "serve .",
+    "dev": "live-server --port=3000 --entry-file=public/index.html"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
