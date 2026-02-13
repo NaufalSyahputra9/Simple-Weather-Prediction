@@ -1,0 +1,10 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+
+# Dependensi Node (karena kamu punya package.json)
+node_modules
+npm-debug.log

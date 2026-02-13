@@ -1,0 +1,16 @@
+# Git
+.git
+.gitignore
+
+# IDE / Editor
+.vscode
+.idea
+
+# File binary sisa percobaan lokal (jangan dibawa ke Docker)
+weather-backend
+*.exe
+*.out
+*.test
+
+# PENTING: JANGAN MENG-IGNORE .apiConfig
+# Karena file itu dibutuhkan saat proses COPY di Dockerfile
